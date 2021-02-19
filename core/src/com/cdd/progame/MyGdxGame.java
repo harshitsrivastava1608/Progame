@@ -22,8 +22,6 @@ public class MyGdxGame extends ApplicationAdapter {
 		Gdx.gl.glClearColor(1, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
-		//batch.draw(img, 0, 0);
-
 		if(Gdx.input.isTouched()) {
 			Vector3 touchPos = new Vector3();
 			touchPos.set(Gdx.input.getX(), Gdx.input.getY(), 0);
@@ -31,8 +29,7 @@ public class MyGdxGame extends ApplicationAdapter {
 			Gdx.gl.glClearColor(1, 0, 0, 1);
 			Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 			batch.draw(img,(Gdx.input.getX()),Gdx.input.getY());
-			//camera.unproject(touchPos);
-			//bucket.x = touchPos.x - 64 / 2;
+			
 		}batch.end();
 	}
 
